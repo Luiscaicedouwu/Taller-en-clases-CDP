@@ -1,16 +1,18 @@
-function calcular_resultado() {
- var ingresar_nota = prompt("ingrese su nota")
- 
- if (ingresar_nota >= 0 && ingresar_nota <= 5){
-     if (ingresar_nota >= 3 && ingresar_nota <= 5){
-         alert("Usted aprobó") 
-     }
+function calcular_resultado(nota) {
+    var calcular_resultado = prompt("ingresa tu nota");
 
-     else if (ingresar_nota >= 0 && ingresar_nota < 3){
-        alert("Usted no aprobó")
+    if (calcular_resultado > 0 && calcular_resultado < 5) {
+        if (calcular_resultado >= 0 && calcular_resultado < 3) {
+            alert("No aprobo");
+        } else if (calcular_resultado >= 3 && calcular_resultado <= 5) {
+            alert("congrats, aprobaste");
+        } 
+        
     }
- }
-else {
-    alert("La nota ingresada no es correcta. Por favor, intentelo nuevamente")
+    else {
+        alert("Numero ingresado invalido")
+    }
 }
-}
+
+
+calcular_resultado()
