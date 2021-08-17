@@ -1,15 +1,18 @@
-function mmi(n1, n2) { 
-    if (n1 > n2) {
-        return console.log("El número " + n1 + " es mayor que el número " + n2)
-    }
-    else 
-        if (n1 < n2) {
-         return console.log("El número " + n1 + " es menor que el número " + n2)
-    }
-    else 
-        if(n1 == n2) {
-            return console.log("El número " + n1 + " es igual que el número " + n2)
-    }
-    
-    
-}
+// Punto numero 1 //
+
+function mayor_menor_igual(numero1, numero2) {
+    if(numero1 > numero2){ 
+        console.log("El numero " + numero1 + " es mayor que el numero " + numero2)
+
+        }
+        else if(numero1 < numero2){
+             console.log("El numero " + numero1 + " es menor que el " + numero2)
+
+            }
+            else if(numero1 == numero2){
+                 console.log("El numero " + numero1 + " es igual a " + numero2)
+            }
+        }
+
+mayor_menor_igual(3, 2)
+
